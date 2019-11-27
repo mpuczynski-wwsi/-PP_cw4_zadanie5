@@ -15,5 +15,13 @@ bool czy_pierwsza(long long a) {
 }
 
 int main() {
-
+	int zakres1, zakres2;
+	cout << "Znajdz wszystkie liczby pierwsze w podanym zakresie.\n";
+	cout << "Podaj zakres: ";
+	cin >> zakres1 >> zakres2;
+	for (int i = zakres1; i <= zakres2; i++) {
+		if (czy_pierwsza(i)) {
+			cout << "\nLiczba " << i << " jest liczba pierwsza";
+		}
+	}
 }
